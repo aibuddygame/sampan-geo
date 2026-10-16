@@ -2,9 +2,9 @@
 Check tasks only after verification and evidence are recorded in `10-PROGRESS.md`. Documentation preparation is separate from committing it.
 
 ## Phase 0 — Planning / repository setup
-- [x] P00-1 Verify private GitHub repository `aibuddygame/sampan-geo` exists (2026-10-16; empty).
-- [ ] P00-2 Commit the starter documentation, `AGENTS.md`, `.gitignore`.
-- [ ] P00-3 Verify or create ChatGPT Project `SAMPAN.AI — SEO, GEO & AI Agent Platform`, paste `CHATGPT_PROJECT_INSTRUCTIONS.md`, move relevant chat, attach master plan.
+- [x] P00-1 Verify private GitHub repository `aibuddygame/sampan-geo` exists (2026-10-16; populated `main` verified; see `10-PROGRESS.md`).
+- [x] P00-2 Commit the starter documentation, `AGENTS.md`, `.gitignore` (2026-10-16; documentation commit `0073b487a84f325f9333a6bdf81af565d34ac9e1` and `.gitignore` commit `b32e21dd9f6612d06b40126488723a04f94a37b6`; current tree verified in `10-PROGRESS.md`).
+- [ ] P00-3 Verify or create ChatGPT Project `SAMPAN.AI — SEO, GEO & AI Agent Platform`, paste `CHATGPT_PROJECT_INSTRUCTIONS.md`, move relevant chat, attach master plan. **Partially verified 2026-10-16:** current Project context specifies OpenAI Codex and exposes all 14 required reference files, including the master plan. Relevant-chat move and exact GitHub/snapshot parity remain unverified. Snapshot synchronization is manual; see `10-PROGRESS.md`.
 - [ ] P00-4 Verify DNS/domain ownership, choose staging hostname and hosting, **do not overwrite an existing site**.
 - [ ] P00-5 Capture initial `vxreal.com` Search Console / citation-query baseline and owner-approved service list.
 
