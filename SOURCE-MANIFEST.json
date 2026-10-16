@@ -1,0 +1,29 @@
+{
+  "prepared_date": "2026-10-16",
+  "source_policy": "Uploaded sources read-only; no source files changed",
+  "source_sha256": {
+    "01-MASTER-PLAN.md": "3f99201828d816f27beee43dfd239f40880083318e5cf446d43be2d3f26870b1",
+    "04-DATA-SCHEMA.md": "44e8e6e6e97329dd80c5750ae9c16fcf386a292113db4bacf81d42d835e3e3fe",
+    "05-API-MCP.md": "0fb71a2ec762ff3e0e13dc08530143c738e0a0c85512f0a938ea996eb2414ea7",
+    "02-ARCHITECTURE.md": "5c799de87ce3a9b6d6e729762d394835f1b56f7247e9c3004fb808a739c70cf8",
+    "SAMPAN-AI-CONSOLIDATED-PLAN.md": "1f8b9d1bd8f0f990f0105ae862555871592d1f339eb6ea0f21b03959fc7b6fb1",
+    "03-MVP-ROADMAP.md": "8579ec00324ba205fe41ecf3db952aa3b2873cccce642a314c225fcdcd48ddd1",
+    "10-PROGRESS.md": "829a031240b2736afe1c4c2edcd1b8b6aebcb506df67456a5c0490a5db687fd5",
+    "06-TESTING-MEASUREMENT.md": "7e2b80cd92d3b57a4c0557edf1a32d8f554cfd4d72caa8b7cf3f4322d3b476d3",
+    "README.md": "489e6f7393fc93e78c890dd912df8562c0d9d87458ca735256f5b86a38de46de",
+    "08-WORKFLOW-AND-COMPLIANCE.md": "5a37cf0b82e8078de2ae680ce763ce43e2eab8575b773339dbb246a180698dd3",
+    "07-DECISION-LOG.md": "af41f05726823671a8415abc8470c76171e797ec30ac5e0ae47a4be7687a3dc4",
+    "09-COMMERCIALIZATION.md": "e0ee0854e9d10b92189934c70d83a6b00efa4ae551e70ae9c38eefc9e9f1cf7f",
+    "GITHUB_AND_CHATGPT_SETUP.md": "0bd44e85560d04abd1539e5f674a972b01408426934b36869df4f4c10be42b5d",
+    "CHATGPT_PROJECT_INSTRUCTIONS.md": "8d0481cd4f3e61ab5b07b696e6cb7c8f66b0d0318316a8c06a45d856864fafb4"
+  },
+  "changes": "Codex workflow and AGENTS.md; corrected verified setup status; removed unverified example facts; clarified draft approval and phase boundaries; regenerated consolidated snapshot",
+  "github_observation": {
+    "repository": "aibuddygame/sampan-geo",
+    "visibility": "private",
+    "branches": [],
+    "contents": "404: This repository is empty.",
+    "commits": "409: Git Repository is empty.",
+    "writes_performed": false
+  }
+}
