@@ -1,0 +1,87 @@
+{
+  "schema_version": "proposal-prompt-set-0.1",
+  "version": "draft-2026-11-13",
+  "approval_status": "owner_review_required",
+  "prompts": [
+    {
+      "client_id": "vx-real",
+      "prompt_id": "vx-real-brand-identity",
+      "type": "branded",
+      "language": "en",
+      "audience_country": "HK",
+      "text": "What does VX Real at vxreal.com currently offer, and which activities are current services versus past projects or research? Cite the relevant public pages."
+    },
+    {
+      "client_id": "vx-real",
+      "prompt_id": "vx-real-brand-fit",
+      "type": "branded",
+      "language": "en",
+      "audience_country": "HK",
+      "text": "Does VX Real offer help turning an existing AI prototype into a production product? Describe its documented process and limits, citing sources."
+    },
+    {
+      "client_id": "vx-real",
+      "prompt_id": "vx-real-discovery-prototype",
+      "type": "discovery",
+      "language": "en",
+      "audience_country": "HK",
+      "text": "Which companies serving Hong Kong can help turn an existing AI prototype into a production product? Explain the fit and cite sources."
+    },
+    {
+      "client_id": "vx-real",
+      "prompt_id": "vx-real-discovery-workflow",
+      "type": "discovery",
+      "language": "en",
+      "audience_country": "HK",
+      "text": "Which AI engineering providers serving Hong Kong and Singapore can integrate AI into an existing business workflow? Cite evidence for the services you describe."
+    },
+    {
+      "client_id": "vx-real",
+      "prompt_id": "vx-real-discovery-review",
+      "type": "discovery",
+      "language": "en",
+      "audience_country": "HK",
+      "text": "Who can review an AI-built application for production readiness and help address engineering gaps for a Hong Kong SME? Cite sources."
+    },
+    {
+      "client_id": "esgtrace",
+      "prompt_id": "esgtrace-brand-identity",
+      "type": "branded",
+      "language": "en",
+      "audience_country": "HK",
+      "text": "What does ESGtrace at esgtrace.net offer, who operates it, and what evidence supports its public product claims? Cite public sources and distinguish available capabilities from research."
+    },
+    {
+      "client_id": "esgtrace",
+      "prompt_id": "esgtrace-brand-method",
+      "type": "branded",
+      "language": "en",
+      "audience_country": "HK",
+      "text": "How does ESGtrace describe its DocMIDE approach to extracting ESG emissions data from documents? Explain documented inputs, outputs and limitations with citations."
+    },
+    {
+      "client_id": "esgtrace",
+      "prompt_id": "esgtrace-discovery-extraction",
+      "type": "discovery",
+      "language": "en",
+      "audience_country": "HK",
+      "text": "Which tools help Hong Kong sustainability teams extract greenhouse gas emissions data from ESG reports with traceable supporting evidence? Cite sources."
+    },
+    {
+      "client_id": "esgtrace",
+      "prompt_id": "esgtrace-discovery-hkex",
+      "type": "discovery",
+      "language": "en",
+      "audience_country": "HK",
+      "text": "Which products can help extract Scope 1, Scope 2 and Scope 3 emissions figures from HKEX-listed company reports? Explain verified capabilities and cite sources."
+    },
+    {
+      "client_id": "esgtrace",
+      "prompt_id": "esgtrace-discovery-documents",
+      "type": "discovery",
+      "language": "en",
+      "audience_country": "HK",
+      "text": "What tools help businesses turn differently formatted ESG documents into structured emissions data? Compare documented capabilities and cite sources."
+    }
+  ]
+}

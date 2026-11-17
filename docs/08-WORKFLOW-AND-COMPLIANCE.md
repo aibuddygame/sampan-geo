@@ -26,3 +26,6 @@ Draft → reviewer QA → approval → versioned publish. Client CMS writes and 
 
 ## Costs and operational safety
 Hard limits on crawl pages, HTML bytes, tokens, scheduled run frequency and monthly API budget. Compute per-profile and per-update cost. Favor changed-content-only processing over periodic re-extraction of unchanged pages.
+
+## Client SEO/GEO improvement procedure
+Use [docs23](23-SEO-GEO-STANDARD-PROCEDURE.md) and its blank client record for engagements. Separate collection consent, factual approval and deployment approval. Search Console/export is optional; missing measurement does not block improvements or justify an invented visibility score.

@@ -1,0 +1,43 @@
+{
+  "schema_version": "proposal-ai-visibility-0.1",
+  "record_status": "template",
+  "run_id": null,
+  "client_id": null,
+  "campaign_id": null,
+  "prompt_set_version": null,
+  "prompt_id": null,
+  "prompt_type": null,
+  "prompt_text": null,
+  "provider": null,
+  "model": null,
+  "interface": null,
+  "search_enabled_requested": null,
+  "search_status": null,
+  "locale_requested": {
+    "language": "en",
+    "audience_country": "HK"
+  },
+  "locale_observed": null,
+  "started_at_utc": null,
+  "completed_at_utc": null,
+  "response_status": null,
+  "response_text_ref": null,
+  "provider_request_id": null,
+  "target_mentioned": null,
+  "target_cited": null,
+  "citations": [],
+  "accuracy_review": {
+    "status": "not_reviewed",
+    "reviewer": null,
+    "evidence_refs": []
+  },
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "search_requests": null,
+    "cost": null,
+    "currency": null,
+    "cost_source": null
+  },
+  "error": null
+}

@@ -23,7 +23,7 @@ Build a curated review set of 10 permitted pages from VX Real and, once authoriz
 | Cost per approved company profile | Record actual, set budget after first tests | LLM logs |
 
 ## SEO baseline and ongoing comparison (VX Real)
-Before deployment record dated Google Search Console impressions/clicks/queries, indexing, main service page URLs, canonical/robots/sitemap, and sample SERP positions where measurable. After approved modifications record exact change log/date and trend by comparable periods. External confounders prevent automatic causality claims.
+Before deployment record main service URLs and technical evidence, plus dated Search Console/export, indexing and sample search-position data where available. Account connection is optional; unavailable data remains unmeasured and does not block improvements. After approved modifications record exact change log/date and compare equivalent periods/targets when data exists. Without a comparable baseline, do not claim measured uplift. External confounders prevent automatic causality claims.
 
 ## GEO / AI visibility benchmark
 Maintain a fixed list of 10 relevant questions on business capabilities. At each measurement date log tested provider, whether web search is enabled, wording, source/citation URL, result correctness, and changes in visibility. This is directional evidence, not proof of ranking uplift or guaranteed model inclusion.
