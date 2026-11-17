@@ -111,3 +111,5 @@ Payments, consumer UX, mass web directory imports, unsolicited bulk publishing, 
 - [x] L030 Prepare the colleague handoff for VX Real and ESGtrace, current local source, two portable skills, hosting/access intake, draft AI benchmark prompts and implementation acceptance units (2026-11-13). See docs30 and the packaged validation record. Actual AI visibility tracking and generalized two-client reporting remain pending V001–V004.
 
 - [x] L031 Prepare the teammate testing release: current source, setup guide and portable procedures; four-template package configuration and privacy-reviewed staging. Verification and GitHub publication evidence are recorded in the progress log. No public site deployment or T001 advancement.
+
+- [x] L032 Publish the refreshed project brief, team testing checklist and blank feedback form under docs/team with a single linked entry point (18 November 2026; documentation-only, no application changes).

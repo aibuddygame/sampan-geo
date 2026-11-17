@@ -1,6 +1,8 @@
 # SAMPAN teammate testing guide
 
-Prepared 17 November 2026. Purpose: run the current private SAMPAN prototype on your own computer, test permitted URLs and give feedback. No public deployment is required.
+Updated 18 November 2026. Purpose: run the current private SAMPAN prototype on your own computer, test permitted URLs and give feedback. No public deployment is required.
+
+Start with the [project brief](PROJECT-BRIEF.md), then use the [testing checklist](TESTING-CHECKLIST.md) and [feedback template](templates/TESTING-FEEDBACK.csv) alongside this guide. See the [team index](README.md) for all materials.
 
 ## 1. Get the current version
 
@@ -11,7 +13,7 @@ git clone https://github.com/aibuddygame/sampan-geo.git
 cd sampan-geo
 ```
 
-Use the default branch once this release is merged. If testing a review branch, check out the exact branch Barry provides. For later updates, save your own changes first, then use `git pull --ff-only`. The optional dated ZIP is an earlier offline snapshot; GitHub is the maintained testing source after this release. Never copy a ZIP over an existing checkout without comparing changes.
+Use the default branch, main, for the published testing version. If testing a review branch, check out the exact branch Barry provides. For later updates, save your own changes first, then use `git pull --ff-only`. The optional dated ZIP is an earlier offline snapshot; GitHub is the maintained testing source after this release. Never copy a ZIP over an existing checkout without comparing changes.
 
 ## 2. Install and start — macOS / Linux
 

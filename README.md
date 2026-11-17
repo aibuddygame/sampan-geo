@@ -4,6 +4,8 @@
 
 The current local prototype includes English/Traditional Chinese URL checks, separate SEO/GEO readiness scores, up to nine source-backed topics, optional Kimi analysis and local report history. Run it on your own computer; no public SAMPAN deployment is included.
 
+**[Team testing hub](docs/team/README.md)** — project brief, checklist and feedback template.
+
 **[Teammate setup guide](docs/team/TEAM-SETUP.md)** — clone, install, start the checker on port 8004 and report feedback. **[Reusable skills](docs/team/skills/)** and **[AI visibility implementation plan](docs/team/AI-VISIBILITY-PLAN.md)** are included. AI mentions/citations tracking is planned, not implemented. Google reporting uses private local snapshots and legacy pilot routing; teammate Google access is separate.
 
 The original T001 roadmap below remains a separate milestone from this local scoring experiment. Credentials, Google authorization, saved client reports and local transfer archives are excluded from Git.
