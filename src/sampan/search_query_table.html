@@ -1,0 +1,41 @@
+<section class="card" aria-labelledby="search-title">
+<h2 id="search-title">Google search queries · marksix.gold</h2>
+<p id="search-status" role="status">Loading saved Search Console data…</p>
+<label for="query-filter" hidden id="query-label">Filter by search query or page</label>
+<input id="query-filter" type="search" hidden>
+<div class="history"><table id="query-table" hidden><thead><tr><th scope="col">Search query</th><th scope="col">Page Google showed</th><th scope="col">Impressions</th><th scope="col">Clicks</th><th scope="col">Avg. position</th></tr></thead><tbody></tbody></table></div>
+<p id="query-count" role="status"></p>
+<small>Average position comes from Google and is weighted by impressions across devices for each query and page. Google may omit some queries. Use impressions to judge the strength of a signal.</small>
+</section>
+<script nonce="__TOKEN__">
+{
+const make=(tag,value)=>{const node=document.createElement(tag);node.textContent=value;return node;};
+fetch('__SEARCH_ENDPOINT__',{headers:{'x-scan-token':'__TOKEN__'}}).then(response=>{
+ if(!response.ok)throw Error();
+ return response.json();
+}).then(report=>{
+ const status=document.getElementById('search-status');
+ if(!report){status.textContent='No saved Hong Kong Search Console report is available.';return;}
+ status.textContent='Final Google Web Search · Hong Kong · all devices · '+report.start+' to '+report.end+' (Pacific dates)';
+ if(!report.rows.length){status.textContent+=' · Google returned no query and page rows.';return;}
+ const input=document.getElementById('query-filter');
+ const table=document.getElementById('query-table');
+ document.getElementById('query-label').hidden=input.hidden=table.hidden=false;
+ const render=()=>{
+  const term=input.value.trim().toLowerCase();
+  const matches=report.rows.filter(row=>row.query.toLowerCase().includes(term)||row.page.toLowerCase().includes(term));
+  const visible=matches.slice(0,25);
+  table.tBodies[0].replaceChildren(...visible.map(item=>{
+   const row=make('tr','');
+   const page=new URL(item.page);
+   row.append(make('td',item.query),make('td',page.pathname+page.search),
+              make('td',item.impressions),make('td',item.clicks),make('td',item.average_position.toFixed(1)));
+   return row;
+  }));
+  document.getElementById('query-count').textContent='Showing '+visible.length+' of '+matches.length+' matching query and page rows.';
+ };
+ input.addEventListener('input',render);
+ render();
+}).catch(()=>{document.getElementById('search-status').textContent='Saved Search Console data could not be loaded.';});
+}
+</script>

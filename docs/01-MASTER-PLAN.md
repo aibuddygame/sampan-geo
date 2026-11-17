@@ -41,7 +41,7 @@ Admin enters `https://vxreal.com`. SAMPAN discovers relevant crawlable pages (ma
 2. Approved profile rendered correctly (HTML + JSON-LD) and fetched via JSON API.
 3. No unauthorized remote writes, no secrets disclosed, no unsupported claims published.
 4. A connected test agent can answer known VX Real questions using the API with source links.
-5. Search Console and AI citation baseline documented before on-site optimization; only then run a measured before/after test (external effects may be inconclusive).
+5. Record available search/AI baseline evidence before changes where feasible. Search Console connection/export is optional and does not block on-site optimization. Without comparable baseline/outcome evidence, report improvements as technical/content changes rather than measured visibility uplift. See docs23 for the repeatable procedure.
 
 ## 8. Commercialization hypothesis
 Eventually offer website audit, managed knowledge extraction, GEO enhancement proposals, optional publisher-domain integration, update monitoring, and enterprise API/MCP. Validate willingness to pay with direct pilots; do not equate crawl/citation metrics with revenue.

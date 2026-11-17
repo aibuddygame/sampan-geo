@@ -42,7 +42,7 @@ VXREAL.COM (owned content)
 - Distinguish SAMPAN's independent company listing from the owner's official website, which remains the original authoritative location.
 
 ## Audit -> optimization loop
-1. Capture VX Real current pages, Search Console baseline, indexed URLs and target search queries.
+1. Capture VX Real current pages and agreed target queries; record optional Search Console/export, indexing and AI baseline data when available. Missing outcome data does not block improvements; label it unmeasured.
 2. Produce recommendations for titles, helpful service details, internal links, organization/service schema, crawlability, missing evidence.
 3. Owner manually approves and deploys selected changes on VX Real.
 4. Monitor technical crawl/indexing status and AI citation benchmark with clear dates, caveats, and controls.

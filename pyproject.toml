@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77,<83"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sampan-geo"
+version = "0.1.0"
+description = "SAMPAN.AI local evidence pipeline foundation"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115,<1",
+    "pydantic-settings>=2.7,<3",
+    "uvicorn>=0.34,<1",
+    "httpx>=0.28,<1",
+    "beautifulsoup4>=4.13,<5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3,<10"]
+render = ["playwright>=1.64,<2"]
+google = ["google-auth-oauthlib>=1.2,<2"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.package-data]
+sampan = ["scoring_ui.html", "pilot_ui.html", "client_ui.html", "search_query_table.html"]

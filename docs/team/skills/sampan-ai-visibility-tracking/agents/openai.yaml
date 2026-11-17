@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Visibility Tracking"
+  short_description: "Measure actual AI mentions, citations and answer accuracy"
+  default_prompt: "Use $sampan-ai-visibility-tracking to prepare or run an evidence-backed campaign and report AI observations beside Search Console metrics."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO & GEO Site Enhancement"
+  short_description: "Audit, improve and measure search and AI visibility"
+  default_prompt: "Use $seo-geo-site-enhancement to review this website, prioritize evidence-backed improvements, and plan how to verify and measure them."

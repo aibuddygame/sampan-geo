@@ -12,6 +12,8 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
+*.egg-info/
+build/
 # JavaScript
 node_modules/
 .next/
@@ -30,3 +32,6 @@ logs/
 .DS_Store
 .idea/
 .vscode/
+
+# Local transfer archives and retained client handoff material
+handoff/
