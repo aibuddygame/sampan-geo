@@ -353,3 +353,10 @@ Date; task ID; input/output; files/commit; actual checks/results; costs; blocker
 - Objective: make the latest brief and testing materials available together in GitHub. Inputs are the owner-reviewed 18 November handoff documents; outputs are docs/team/PROJECT-BRIEF.md, TESTING-CHECKLIST.md and templates/TESTING-FEEDBACK.csv, plus a team index and links from the root README and setup guide.
 - ESGtrace is the main service-development pilot; VX Real remains the reference site. Preserved current versus planned feature distinctions and the one-off ESGtrace scan boundary. No credentials, completed client records or private reports added.
 - Verification: all relative Markdown links in docs/team and the root README resolve; blank feedback CSV parses with its expected header; staged diff whitespace and changed-file scope checked. Application source is unchanged, so regression tests were not rerun. No website deployment, live API call or client-site change.
+
+## 2026-11-18 — L033 service-first direction and PrivateKB
+
+- Objective: revise the team brief to reflect the owner-approved direct-service model and proposed PrivateKB differentiation. Outputs: expanded project brief, matching team introduction and discovery questions in the testing checklist; decision D033 recorded.
+- Private and approved public knowledge are separated; client approval, source evidence, confidentiality and external AI transmission boundaries are explicit. PrivateKB remains optional and unintegrated, with installation/security/key-management/retrieval validation required. SaaS is deferred while direct engagements establish actual client needs and delivery economics.
+- Refreshed from GitHub main and preserved the new team-contributed web prototype. Its presence is documented without claiming runtime verification or equating its rubric with the Python checker.
+- Documentation-only checks: relative links, scope and whitespace reviewed. Application tests were not rerun; no code changes, PrivateKB installation, client-document upload or site deployment performed.

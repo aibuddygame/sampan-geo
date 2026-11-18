@@ -113,3 +113,5 @@ Payments, consumer UX, mass web directory imports, unsolicited bulk publishing, 
 - [x] L031 Prepare the teammate testing release: current source, setup guide and portable procedures; four-template package configuration and privacy-reviewed staging. Verification and GitHub publication evidence are recorded in the progress log. No public site deployment or T001 advancement.
 
 - [x] L032 Publish the refreshed project brief, team testing checklist and blank feedback form under docs/team with a single linked entry point (18 November 2026; documentation-only, no application changes).
+
+- [x] L033 Update the project direction for direct service first, client discovery and optional PrivateKB evaluation (18 November 2026; documentation only; PrivateKB integration and self-service SaaS remain unimplemented).

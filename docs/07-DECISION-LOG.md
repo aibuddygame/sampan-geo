@@ -124,3 +124,7 @@ The owner requested transfer of the current SAMPAN work to a colleague using VX 
 ## D032 — Private teammate testing source release (2026-11-17)
 
 Publish the reviewed current source, setup guide and reusable procedures to the existing private repository, using an isolated branch from main to preserve the original workspace and exclude unrelated unpublished history. Keep runtime reports, client archives and account authorization local. Include all runtime HTML templates in wheels and verify a fresh dependency installation. This authorizes code sharing for local testing, not public hosting or client-site deployment.
+
+## D033 — Service-first delivery and optional PrivateKB evaluation (2026-11-18)
+
+Owner chose direct client service first to learn real needs, with self-service SaaS deferred. Evaluate PrivateKB as an optional private-knowledge component alongside a separate approved public knowledge layer. Its integration and security claims require validation; it is not a ranking feature or an existing SAMPAN capability. Preserve the newly contributed web prototype and its separate scoring method.

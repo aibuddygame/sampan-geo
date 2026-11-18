@@ -1,6 +1,6 @@
 # Start here — SAMPAN.ai team testing
 
-Updated 18 November 2026. Use ESGtrace as the main service-development pilot and VX Real as the existing reference site. The goal is a repeatable SEO/GEO service under SAMPAN.ai.
+Updated 18 November 2026. Use ESGtrace as the main service-development pilot and VX Real as the existing reference site. The goal is a directly delivered SEO/GEO/AEO service under SAMPAN.ai, with approved business knowledge and optional PrivateKB integration as a proposed differentiator. Start by serving clients and learning their needs; self-service SaaS is deferred.
 
 1. Read the [project brief](PROJECT-BRIEF.md) for the direction, current capabilities and what we want to learn.
 2. Follow the [setup guide](TEAM-SETUP.md) to clone and run the testing site locally.
