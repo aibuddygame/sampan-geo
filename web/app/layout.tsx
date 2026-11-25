@@ -14,22 +14,25 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "SEO AI — Instant AI-Powered Website SEO Auditor",
-    template: "%s | SEO AI",
+    default: "AnswerTrace — GEO, AEO & SEO Visibility Auditor",
+    template: "%s | AnswerTrace",
   },
   description:
-    "Analyze any website URL for technical, on-page, and content SEO issues. Get an instant breakdown score and actionable AI-generated code fixes.",
+    "See how AI agents search and read your site to answer real user questions. Trace retrieval steps, spot visibility gaps, and generate practical fixes for SEO, AEO, and GEO.",
   keywords: [
+    "AnswerTrace",
+    "GEO",
+    "AEO",
     "SEO audit",
-    "AI SEO tool",
+    "Generative Engine Optimization",
+    "Answer Engine Optimization",
+    "AI search visibility",
     "website analyzer",
-    "meta tags checker",
-    "technical SEO",
   ],
   openGraph: {
-    title: "SEO AI — Instant AI-Powered Website SEO Auditor",
+    title: "AnswerTrace — GEO, AEO & SEO Visibility Auditor",
     description:
-      "Evaluate website SEO health and generate ready-to-use AI fixes in seconds.",
+      "See how AI agents search and read your site to answer real user questions. Trace retrieval steps, spot visibility gaps, and generate practical fixes for SEO, AEO, and GEO.",
     type: "website",
   },
   icons: {
