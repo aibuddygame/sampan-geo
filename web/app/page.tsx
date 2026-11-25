@@ -1,7 +1,7 @@
 "use client";
 
 import AEOPage from "@/src/frontend/aeo";
-import { HomePage } from "@/src/frontend/home/home";
+import HomePage from "@/src/frontend/home/home";
 import SEOPage from "@/src/frontend/seo";
 import { ActivePage } from "@/src/interface/page";
 import { AnimatePresence, motion } from "framer-motion";
@@ -86,7 +86,12 @@ export default function AppPage() {
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.22, ease: "easeOut" }}
           >
-            {activePage === "home" && <HomePage />}
+            {activePage === "home" && (
+              <HomePage
+                onSEO={() => setActivePage("seo")}
+                onAEO={() => setActivePage("aeo")}
+              />
+            )}
             {activePage === "seo" && <SEOPage />}
             {activePage === "aeo" && <AEOPage />}
           </motion.div>
