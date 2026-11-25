@@ -51,6 +51,7 @@ class CreateRunRequest(BaseModel):
     target_url: str | None = None
     max_results: int = Field(default=5, ge=1, le=10)
 
+
 # ---------------------------------------------------------------------------
 # Tool Definitions & Prompt
 # ---------------------------------------------------------------------------
@@ -180,7 +181,6 @@ def create_and_execute_run(req: CreateRunRequest):
                     query = str(args.get("query", "")).strip()
                     model_output, telemetry = run_web_search(
                         query=query,
-                        max_results=req.max_results,
                         target_domain=target_domain,
                     )
                 elif tool_name in ("fetch_page", "extract_page"):

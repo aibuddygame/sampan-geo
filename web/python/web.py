@@ -5,13 +5,13 @@ from ddgs import DDGS
 from helper import is_target_match
 
 MAX_TOOL_TEXT_CHARS = 5000
+MAX_RESULT = 5
 
-def run_web_search(
-    query: str, max_results: int, target_domain: str | None
-) -> tuple[str, dict[str, Any]]:
+
+def run_web_search(query: str, target_domain: str | None) -> tuple[str, dict[str, Any]]:
     start = time.perf_counter()
     try:
-        raw_results = DDGS().text(query, max_results=max_results) or []
+        raw_results = DDGS().text(query, max_results=MAX_RESULT) or []
         enriched = []
         for idx, item in enumerate(raw_results, start=1):
             href = item.get("href", "")
