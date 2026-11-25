@@ -57,23 +57,23 @@ class CreateRunRequest(BaseModel):
 # ---------------------------------------------------------------------------
 TOOLS = [
     {
-        "type": "function",
-        "function": {
-            "name": "web_search",
-            "description": "Search the web for current information, sources, and relevant pages.",
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "query": {
-                        "type": "string",
-                        "description": "Concise search query keywords.",
-                    }
-                },
-                "required": ["query"],
-                "additionalProperties": False,
+    "type": "function",
+    "function": {
+        "name": "web_search",
+        "description": "Search the web using short keyword phrases (not full sentences). Returns titles, URLs, and snippets.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "query": {
+                    "type": "string",
+                    "description": "Short keyword search query (3-7 words). Include the current year only if freshness matters.",
+                }
             },
+            "required": ["query"],
+            "additionalProperties": False,
         },
     },
+},
     {
         "type": "function",
         "function": {
@@ -98,11 +98,15 @@ TOOLS = [
     },
 ]
 
-SYSTEM_PROMPT = """You are a helpful AI assistant equipped with `web_search` and `fetch_page` tools.
-Use `web_search` to find relevant sources and `fetch_page` when you need deeper details from a promising page.
-Answer the user's question clearly and concisely based on the information you gather."""
+def build_system_prompt() -> str:
+    today_str = datetime.now(timezone.utc).strftime("%B %d, %Y")
+    return f"""You are a helpful AI assistant equipped with `web_search` and `fetch_page` tools.
+Current date: {today_str}.
 
-
+Guidelines:
+- `web_search` uses keyword/phrase search (like a search engine, not a full sentence). Keep queries short, specific, and free of outdated year assumptions—use the current year ({datetime.now(timezone.utc).year}) when recency matters.
+- Use `fetch_page` with a clear `topic` when a search result looks promising and you need deeper details.
+- Answer clearly and concisely based on the sources you gather, noting trade-offs or uncertainty rather than declaring a single "best" product unconditionally."""
 # ---------------------------------------------------------------------------
 # Routes
 # ---------------------------------------------------------------------------
@@ -127,7 +131,7 @@ def create_and_execute_run(req: CreateRunRequest):
     run_id = str(run_oid)
 
     messages: list[dict[str, Any]] = [
-        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "system", "content": build_system_prompt()},
         {"role": "user", "content": req.question},
     ]
 
