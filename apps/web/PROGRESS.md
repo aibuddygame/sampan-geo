@@ -8,7 +8,7 @@ Output: independent buildless landing-page foundation, nine unchanged source sna
 ## Verified
 
 - `node --check apps/web/public/app.js` — passed.
-- `git diff --check` — passed.
+- `git diff --check` — passed for tracked edits before staging. Final `git diff --cached --check` reported three inherited Markdown hard-break lines in the byte-identical `docs/07-DECISIONS.md` snapshot; preserved intentionally for source fidelity.
 - Python standard-library check — all nine copied Markdown documents byte-identical; HTML fragment targets and local stylesheet exist; temporary localhost server returned HTTP 200 for `/`, `/styles.css`, `/app.js`; server stopped.
 - `PYTHONPATH=src /Users/barrylau/Documents/GitHub/sampan-geo/.venv/bin/python -m pytest -q` — 346 passed, 1 skipped, 1 dependency deprecation warning, 3.16 seconds. Existing local environment reused; PYTHONPATH explicitly selects this checkout's source.
 - `git diff --exit-code -- web src tests pyproject.toml` — passed, no changes to existing application code, tests or Python dependencies.
