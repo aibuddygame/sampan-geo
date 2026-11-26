@@ -1,6 +1,6 @@
 "use client";
 
-import AEOPage from "@/src/frontend/aeo";
+import AEOPage from "@/src/frontend/aeo/aeo";
 import HomePage from "@/src/frontend/home/home";
 import SEOPage from "@/src/frontend/seo";
 import { ActivePage } from "@/src/interface/page";
