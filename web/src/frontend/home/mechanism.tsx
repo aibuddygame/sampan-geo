@@ -11,7 +11,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-type StepId = "01" | "02" | "03" | "04";
+type StepId = "01" | "02" | "03";
 
 interface StepConfig {
   id: StepId;
@@ -20,7 +20,7 @@ interface StepConfig {
   title: string;
   desc: string;
   userState: "asking" | "away" | "returned";
-  agentState: "listening" | "searching" | "reading" | "writing";
+  agentState: "listening" | "searching" | "writing";
   internetActive: boolean;
 }
 
@@ -38,9 +38,9 @@ const STEPS: StepConfig[] = [
   {
     id: "02",
     num: "02",
-    shortLabel: "Search & Results",
-    title: "Agent Searches the Internet & Gets Results",
-    desc: "The user can step away while search requests fly out to the internet and matching results fly back to the agent.",
+    shortLabel: "Search & Check",
+    title: "Agent Searches, Reads & Checks Follow-Ups",
+    desc: "The user can step away while the agent sends searches and follow-up checks out to the internet and pulls back matching results.",
     userState: "away",
     agentState: "searching",
     internetActive: true,
@@ -48,16 +48,6 @@ const STEPS: StepConfig[] = [
   {
     id: "03",
     num: "03",
-    shortLabel: "Read & Check",
-    title: "Agent Reads Results & Checks Follow-Ups",
-    desc: "The agent reads into results, sends follow-up checks as needed, and pulls back extra details to fill in gaps.",
-    userState: "away",
-    agentState: "reading",
-    internetActive: true,
-  },
-  {
-    id: "04",
-    num: "04",
     shortLabel: "Final Answer",
     title: "Agent Sends Back the Answer",
     desc: "The agent combines what it found into a clear answer and sends it right back to the user.",
@@ -78,7 +68,7 @@ const SEARCH_ROUNDS_PER_AUTO_STEP = 2;
 const SEARCH_STEP_DURATION_MS =
   SEARCH_ROUND_DURATION_S * 1000 * SEARCH_ROUNDS_PER_AUTO_STEP; // 4400ms
 
-const STEP_04_DURATION_MS = 2400;
+const FINAL_STEP_DURATION_MS = 2400;
 
 const MechanismSection: React.FC = function () {
   const [activeStepId, setActiveStepId] = useState<StepId>("01");
@@ -99,25 +89,17 @@ const MechanismSection: React.FC = function () {
       setActiveStepId("03");
     }, STEP_01_DURATION_MS + SEARCH_STEP_DURATION_MS);
 
-    const t4 = setTimeout(
-      () => {
-        setActiveStepId("04");
-      },
-      STEP_01_DURATION_MS + SEARCH_STEP_DURATION_MS * 2,
-    );
-
     const tDone = setTimeout(
       () => {
         setIsPlaying(false);
         setHasPlayedOnce(true);
       },
-      STEP_01_DURATION_MS + SEARCH_STEP_DURATION_MS * 2 + STEP_04_DURATION_MS,
+      STEP_01_DURATION_MS + SEARCH_STEP_DURATION_MS + FINAL_STEP_DURATION_MS,
     );
 
     return () => {
       clearTimeout(t2);
       clearTimeout(t3);
-      clearTimeout(t4);
       clearTimeout(tDone);
     };
   }, [isPlaying, replayKey]);
@@ -134,7 +116,7 @@ const MechanismSection: React.FC = function () {
     setIsPlaying(true);
   };
 
-  const isSearchStep = activeStep.id === "02" || activeStep.id === "03";
+  const isSearchStep = activeStep.id === "02";
   const searchRepeatCount = isPlaying
     ? SEARCH_ROUNDS_PER_AUTO_STEP - 1
     : Infinity;
@@ -178,7 +160,7 @@ const MechanismSection: React.FC = function () {
       </div>
 
       {/* Step Selector Pills */}
-      <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
+      <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-3">
         {STEPS.map((step) => {
           const isSelected = activeStep.id === step.id;
           return (
@@ -280,7 +262,7 @@ const MechanismSection: React.FC = function () {
               </motion.div>
             )}
 
-            {activeStep.id === "04" && (
+            {activeStep.id === "03" && (
               <motion.div
                 key={`ans-fly-${activeStep.id}-${replayKey}`}
                 initial={{ x: 96, opacity: 0, scale: 0.92 }}
@@ -340,8 +322,8 @@ const MechanismSection: React.FC = function () {
                 <Sparkles className="h-3 w-3 shrink-0 text-emerald-400" />
                 <span className="truncate">
                   {activeStep.agentState === "listening" && "Got question"}
-                  {activeStep.agentState === "searching" && "Searching"}
-                  {activeStep.agentState === "reading" && "Checking"}
+                  {activeStep.agentState === "searching" &&
+                    "Searching & checking"}
                   {activeStep.agentState === "writing" && "Replying"}
                 </span>
               </motion.div>
@@ -369,7 +351,7 @@ const MechanismSection: React.FC = function () {
                   className="inline-flex items-center gap-1.5 self-center whitespace-nowrap rounded-full border border-sky-400/60 bg-slate-950 px-3 py-1 text-xs font-semibold text-sky-200 shadow-md"
                 >
                   <SearchCode className="h-3.5 w-3.5 shrink-0 text-sky-400" />
-                  <span>{activeStep.id === "03" ? "Follow-up" : "Search"}</span>
+                  <span>Search &amp; check</span>
                 </motion.div>
 
                 <motion.div
