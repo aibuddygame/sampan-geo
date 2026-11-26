@@ -1,0 +1,1 @@
+docker run -d --name qwen-vllm --gpus all -p 33366:8000 -v "%USERPROFILE%\.cache\huggingface:/root/.cache/huggingface" vllm/vllm-openai:latest --model cyankiwi/Qwen3.5-9B-AWQ-4bit --max-model-len 32768 --gpu-memory-utilization 0.85 --reasoning-parser qwen3 --max-num-seqs 16
