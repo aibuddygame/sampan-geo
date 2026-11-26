@@ -128,3 +128,7 @@ Publish the reviewed current source, setup guide and reusable procedures to the 
 ## D033 — Service-first delivery and optional PrivateKB evaluation (2026-11-18)
 
 Owner chose direct client service first to learn real needs, with self-service SaaS deferred. Evaluate PrivateKB as an optional private-knowledge component alongside a separate approved public knowledge layer. Its integration and security claims require validation; it is not a ranking feature or an existing SAMPAN capability. Preserve the newly contributed web prototype and its separate scoring method.
+
+## 26 November 2026 — Corporate website starter (separate workstream)
+
+User authorized `apps/web/` in the existing repository. Added a standalone static landing-page starter, scoped instructions and all nine AI Corporate Ambassador specification/handoff snapshots. Source pack retained at `docs/ai-corporate-ambassador/`; see `apps/web/README.md` and `apps/web/PROGRESS.md` for commands and verified status. Existing Next.js `web/`, Python `src/sampan/`, dependencies and tests are unchanged. No T001 acceptance, production migration, live AI, deployment or native ChatGPT Project update is implied. Next: complete the multi-page mockup and simulated admin acceptance units.
