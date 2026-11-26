@@ -1,0 +1,1 @@
+uvicorn server:app --host 0.0.0.0 --port 30200 --workers 4 --no-access-log
