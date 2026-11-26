@@ -360,3 +360,7 @@ Date; task ID; input/output; files/commit; actual checks/results; costs; blocker
 - Private and approved public knowledge are separated; client approval, source evidence, confidentiality and external AI transmission boundaries are explicit. PrivateKB remains optional and unintegrated, with installation/security/key-management/retrieval validation required. SaaS is deferred while direct engagements establish actual client needs and delivery economics.
 - Refreshed from GitHub main and preserved the new team-contributed web prototype. Its presence is documented without claiming runtime verification or equating its rubric with the Python checker.
 - Documentation-only checks: relative links, scope and whitespace reviewed. Application tests were not rerun; no code changes, PrivateKB installation, client-document upload or site deployment performed.
+
+## 26 November 2026 — Corporate website starter (separate workstream)
+
+User authorized `apps/web/` in the existing repository. Added a standalone static landing-page starter, scoped instructions and all nine AI Corporate Ambassador specification/handoff snapshots. Source pack retained at `docs/ai-corporate-ambassador/`; see `apps/web/README.md` and `apps/web/PROGRESS.md` for commands and verified status. Existing Next.js `web/`, Python `src/sampan/`, dependencies and tests are unchanged. No T001 acceptance, production migration, live AI, deployment or native ChatGPT Project update is implied. Next: complete the multi-page mockup and simulated admin acceptance units.

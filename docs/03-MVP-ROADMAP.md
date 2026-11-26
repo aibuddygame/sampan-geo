@@ -115,3 +115,7 @@ Payments, consumer UX, mass web directory imports, unsolicited bulk publishing, 
 - [x] L032 Publish the refreshed project brief, team testing checklist and blank feedback form under docs/team with a single linked entry point (18 November 2026; documentation-only, no application changes).
 
 - [x] L033 Update the project direction for direct service first, client discovery and optional PrivateKB evaluation (18 November 2026; documentation only; PrivateKB integration and self-service SaaS remain unimplemented).
+
+## 26 November 2026 — Corporate website starter (separate workstream)
+
+User authorized `apps/web/` in the existing repository. Added a standalone static landing-page starter, scoped instructions and all nine AI Corporate Ambassador specification/handoff snapshots. Source pack retained at `docs/ai-corporate-ambassador/`; see `apps/web/README.md` and `apps/web/PROGRESS.md` for commands and verified status. Existing Next.js `web/`, Python `src/sampan/`, dependencies and tests are unchanged. No T001 acceptance, production migration, live AI, deployment or native ChatGPT Project update is implied. Next: complete the multi-page mockup and simulated admin acceptance units.
