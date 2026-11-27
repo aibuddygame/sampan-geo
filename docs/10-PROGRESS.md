@@ -384,3 +384,7 @@ The enterprise mockup uses Corporate AI Ambassador / 企業 AI 大使 and the ap
 ## 27 November 2026 — W-S07 clean developer handoff
 
 Prepared the local mockup for the GitHub website branch from the existing website-spec baseline. Repaired the lockfile and verified clean installation, five tests, the build and the 18-page bilingual export. Details are in [the web progress log](../apps/web/PROGRESS.md).
+
+## 27 November 2026 — W-S08 downloadable GitHub preview
+
+Packaged the reviewed website build in `apps/web/SAMPAN-Website-Mockup.zip` and added README instructions. Verified both language entry pages, all localized snapshots, bundled assets, and archive integrity.

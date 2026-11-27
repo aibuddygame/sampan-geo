@@ -2,7 +2,11 @@
 
 Local bilingual mockup of the Corporate AI Ambassador and Enterprise AI Knowledge Hub. The site is an independent Next.js App Router, React and Tailwind CSS application alongside the repository’s SEO/GEO applications.
 
-## Preview on your computer
+## Download the offline mockup
+
+Download [SAMPAN-Website-Mockup.zip](SAMPAN-Website-Mockup.zip?raw=true) and extract the entire folder. Open `index.html` for Traditional Chinese or `en.html` for English. Keep the HTML files and `assets/` together. For the interactive demo, admin and video workflows, run the local app below.
+
+## Run the interactive mockup locally
 
 Use Node.js 20.9 or later. From the repository root:
 

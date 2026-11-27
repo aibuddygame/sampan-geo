@@ -128,3 +128,4 @@ User authorized `apps/web/` in the existing repository. Added a standalone stati
 - [x] W-S05 Expand the AI agent presentation and regenerate the bilingual offline review. See [the app progress log](../apps/web/PROGRESS.md) for build and snapshot checks.
 - [x] W-S06 Apply the approved bilingual Corporate AI Ambassador positioning and package the offline team review. See [the web progress log](../apps/web/PROGRESS.md) for verification.
 - [x] W-S07 Prepare the developer handoff branch and verify clean installation, tests, build, and bilingual export.
+- [x] W-S08 Add the verified offline mockup ZIP and download instructions to the GitHub website folder.

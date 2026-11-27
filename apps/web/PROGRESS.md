@@ -70,3 +70,7 @@ Next W-M02: build the full bilingual public pages within `apps/web/`, followed b
 Prepared the bilingual mockup on a branch based on the public website-spec pull request. Regenerated the lockfile because incomplete optional dependency entries prevented a fresh `npm ci`. Direct dependency versions remain pinned as before.
 
 From a clean checkout, `npm ci` and all five `npm test` checks passed. `npm run build` passed on retry after the Next.js advisory appeared. The offline exporter produced all 18 localized pages, and both revised hero headings were verified. Address the dependency advisory before hosting the site.
+
+## W-S08 — Downloadable review bundle · 27 November 2026
+
+Added the offline ZIP to the GitHub website folder and linked it from the README. Verified the archive integrity, both entry headings, all 18 localized snapshots, and the relative paths used by the bundled pages and assets.
