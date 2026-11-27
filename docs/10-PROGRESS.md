@@ -364,3 +364,23 @@ Date; task ID; input/output; files/commit; actual checks/results; costs; blocker
 ## 26 November 2026 — Corporate website starter (separate workstream)
 
 User authorized `apps/web/` in the existing repository. Added a standalone static landing-page starter, scoped instructions and all nine AI Corporate Ambassador specification/handoff snapshots. Source pack retained at `docs/ai-corporate-ambassador/`; see `apps/web/README.md` and `apps/web/PROGRESS.md` for commands and verified status. Existing Next.js `web/`, Python `src/sampan/`, dependencies and tests are unchanged. No T001 acceptance, production migration, live AI, deployment or native ChatGPT Project update is implied. Next: complete the multi-page mockup and simulated admin acceptance units.
+
+## 26 November 2026 — W-S02 bilingual enterprise website mockup
+
+Implemented the standalone site at `apps/web/` with Traditional Chinese and English marketing pages, visitor Q&A, customer administration simulation, knowledge approval and rollback, video storyboard preview and demo-enquiry email. The [app README](../apps/web/README.md) has the localhost command and review walkthrough. The [app progress log](../apps/web/PROGRESS.md) records build, route, interface and regression checks. Team review and avatar/voice feasibility are the next milestone.
+
+## 26 November 2026 — W-S04 enterprise marketing content
+
+Expanded the bilingual mockup in `apps/web/` with visitor and video workflows, use cases, governance, deployment, pilot rollout, FAQs and detailed service content. The Solutions and Video Studio pages now explain SEO/GEO/AEO, commerce, enterprise transformation and the Mplifier short-video workflow. See [the app progress log](../apps/web/PROGRESS.md) for checks and remaining review work.
+
+## 26 November 2026 — W-S05 AI agent positioning and refreshed review
+
+Added bilingual AI agent content, a labelled source and handover walkthrough, and a repeatable offline preview export. See [the app progress log](../apps/web/PROGRESS.md) for verified routes, local assets and remaining review work.
+
+## 27 November 2026 — W-S06 bilingual product positioning and team review
+
+The enterprise mockup uses Corporate AI Ambassador / 企業 AI 大使 and the approved bilingual hero paragraph. Generated a team ZIP with both language editions and an offline entry page. Five web tests, the production build, 18 local routes, and offline links and assets were verified. See [the web progress log](../apps/web/PROGRESS.md) for checks and remaining review work.
+
+## 27 November 2026 — W-S07 clean developer handoff
+
+Prepared the local mockup for the GitHub website branch from the existing website-spec baseline. Repaired the lockfile and verified clean installation, five tests, the build and the 18-page bilingual export. Details are in [the web progress log](../apps/web/PROGRESS.md).

@@ -132,3 +132,19 @@ Owner chose direct client service first to learn real needs, with self-service S
 ## 26 November 2026 — Corporate website starter (separate workstream)
 
 User authorized `apps/web/` in the existing repository. Added a standalone static landing-page starter, scoped instructions and all nine AI Corporate Ambassador specification/handoff snapshots. Source pack retained at `docs/ai-corporate-ambassador/`; see `apps/web/README.md` and `apps/web/PROGRESS.md` for commands and verified status. Existing Next.js `web/`, Python `src/sampan/`, dependencies and tests are unchanged. No T001 acceptance, production migration, live AI, deployment or native ChatGPT Project update is implied. Next: complete the multi-page mockup and simulated admin acceptance units.
+
+## W-D01 — Next.js for the isolated website mockup · 26 November 2026
+
+Continue the website in `apps/web/` using Next.js App Router, React and Tailwind. Prerender bilingual marketing pages and keep interactive sample state in browser memory within a locale. Use the same approved sample FAQ revision in the admin and visitor experiences. Keep `web/` and `src/sampan/` on their own entry points. The mockup adds no runtime service or cloud dependency.
+
+## W-D02 — Enterprise buyer content · 26 November 2026
+
+Use D-ID Enterprise as a functional benchmark for buyer questions and write original bilingual SAMPAN.ai copy. Lead with the AI Corporate Ambassador and Enterprise AI Knowledge Hub and preserve the six-solution order. Present Video Studio's sample storyboard and Mplifier's long-to-short workflow separately. Treat production deployment, live integration and measured customer outcomes as items that require separate evidence.
+
+## W-D03 — Rebuild offline snapshots from the production output · 26 November 2026
+
+Export the bilingual offline review from the same production build as the local Next.js app. Use static page links and native FAQ disclosures. Keep stateful agent, admin and video interactions in the local app.
+
+## W-D04 — Corporate AI Ambassador naming · 27 November 2026
+
+Use “Corporate AI Ambassador” and “企業 AI 大使” across the mockup. Lead with a single owner-approved homepage paragraph that ties the avatar to the six business capabilities. Keep the six-solution order and existing simulation labels.

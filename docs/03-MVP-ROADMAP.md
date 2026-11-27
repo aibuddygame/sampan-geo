@@ -119,3 +119,12 @@ Payments, consumer UX, mass web directory imports, unsolicited bulk publishing, 
 ## 26 November 2026 — Corporate website starter (separate workstream)
 
 User authorized `apps/web/` in the existing repository. Added a standalone static landing-page starter, scoped instructions and all nine AI Corporate Ambassador specification/handoff snapshots. Source pack retained at `docs/ai-corporate-ambassador/`; see `apps/web/README.md` and `apps/web/PROGRESS.md` for commands and verified status. Existing Next.js `web/`, Python `src/sampan/`, dependencies and tests are unchanged. No T001 acceptance, production migration, live AI, deployment or native ChatGPT Project update is implied. Next: complete the multi-page mockup and simulated admin acceptance units.
+
+## AI Corporate Ambassador website mockup
+
+- [x] W-S02 Build the standalone bilingual website, visitor Q&A, FAQ publication and rollback, avatar settings and storyboards. Build, route, logic and initial responsive rendering verified in [the app progress log](../apps/web/PROGRESS.md).
+- [ ] W-S03 Review the website and admin walkthrough as a team. Define a Cantonese and English feasibility benchmark for one consented avatar and one approved FAQ set.
+- [x] W-S04 Expand the bilingual enterprise mockup with platform workflows, scenarios, governance, pilot rollout, buyer FAQs, and solution details including Mplifier. Build and route verification are recorded in [the app progress log](../apps/web/PROGRESS.md).
+- [x] W-S05 Expand the AI agent presentation and regenerate the bilingual offline review. See [the app progress log](../apps/web/PROGRESS.md) for build and snapshot checks.
+- [x] W-S06 Apply the approved bilingual Corporate AI Ambassador positioning and package the offline team review. See [the web progress log](../apps/web/PROGRESS.md) for verification.
+- [x] W-S07 Prepare the developer handoff branch and verify clean installation, tests, build, and bilingual export.

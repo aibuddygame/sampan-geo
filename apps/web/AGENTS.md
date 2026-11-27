@@ -1,7 +1,7 @@
-# AI Corporate Ambassador mockup starter
+# AI Corporate Ambassador website mockup
 
-This subtree is the authorized isolated corporate website workstream. Root safety instructions apply; the historical T001 milestone describes the SEO/GEO workstream and does not block this explicitly requested starter.
+This subtree is the isolated corporate website workstream. Root instructions apply. The historical T001 milestone describes the separate SEO/GEO workstream.
 
-Read README.md, docs/README.md and docs/06-CODEX-PROMPT.md here before implementation. Keep `web/`, `src/sampan/`, existing tests, root dependencies and existing routes unchanged. Use original SAMPAN visuals and copy, Traditional Chinese first with English support. Never copy D-ID source/media or present simulated AI as live.
+Read README.md and PROGRESS.md here, and use docs/README.md to find the original brief and design reference. Preserve `web/`, `src/sampan/`, existing tests, root dependencies and existing routes. Use original SAMPAN visuals and copy, Traditional Chinese first with English support. Use D-ID only as a functional and information architecture reference.
 
-Starter is buildless HTML/CSS/JS; no production stack has been selected. No backend, credentials, uploads, external AI, database, email delivery or deployment. Use in-memory sample data only. Implement the remaining mockup in small reviewed units and record verified checks in PROGRESS.md.
+The mockup uses Next.js App Router, React and Tailwind CSS. Keep the app independently runnable. Use sample data in browser memory and label simulation, sample metrics and planned functionality visibly. Real service integrations, credentials, uploads, accounts, databases, email delivery and deployment are separate work. Record verified checks and known limits in PROGRESS.md.

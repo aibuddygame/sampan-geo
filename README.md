@@ -110,6 +110,6 @@ The [local read-only Search Console CLI and managed-pilot brief](docs/29-MARKSIX
 
 Use the [VX Real and ESGtrace handoff](docs/30-COLLEAGUE-HANDOFF-AND-AI-VISIBILITY.md) for current colleague setup, portable skills, source transfer and the actual AI mention/citation tracking plan. The handoff records legacy pilot bindings and the next V001–V004 implementation units. Automated AI visibility remains planned work. Historical transfer archives remain local and are excluded from Git; the setup guide and reusable procedures above are included directly in this repository.
 
-## AI Corporate Ambassador website starter
+## AI Corporate Ambassador website mockup
 
-The new corporate website workstream lives in **[apps/web/](apps/web/README.md)**. It includes an isolated runnable static starter and copies of the nine [mockup specification documents](docs/ai-corporate-ambassador/README.md). Existing Next.js SEO/AEO application `web/` and Python SEO/GEO services `src/sampan/` are preserved. This is a starter, not a completed multi-page mockup or deployment.
+The standalone bilingual Next.js mockup lives in [apps/web](apps/web/README.md). It includes the public product site, a scripted visitor demo, a sample admin workspace and the specifications from [PR #3](https://github.com/aibuddygame/sampan-geo/pull/3). It uses port 30101. The existing SEO/AEO application remains at `web/` and the Python SEO/GEO services at `src/sampan/`.
